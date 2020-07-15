@@ -1,0 +1,54 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    display: grid;
+    place-items: center;
+}
+
+footer, header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main, footer, header {
+    max-width: 50vw;
+    min-height: 200px;
+    margin: 0 0.8em;
+}
+
+article h1 {
+    font-size: 1.6em;
+    margin:0.8em 0;
+}
+
+article p {
+    font-size: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.progress-bar {
+    z-index: 2;
+    transition: 1s;
+    width: 0;
+    height: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #73C6B6;
+    box-shadow: 1px 1px 3px 0px #73C6B6;
+}
+
+@media only screen and (max-width: 600px) {
+    footer, header, main {
+        max-width: 100vw;
+    }
+}
